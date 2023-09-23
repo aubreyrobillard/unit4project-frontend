@@ -16,14 +16,11 @@ Welcome to Petter App! The useful app that helps you keep your household of pets
 
 ## About the Developer
 
-Aubrey created the Petter app while inrolled in a strenuous six-month software engineering bootcamp through General Assembly. For more about the developer and to see her other projects, check out the link below!
+Aubrey created the Petter app while enrolled in a strenuous six-month software engineering bootcamp through General Assembly. For more about the developer and to see her other projects, check out the link below!
 
 - [Aubrey Robillard](https://www.linkedin.com/in/aubreyrobillard/)
 
 (add portfolio link?)
-
-
----
 
 
 ## Mock Up:
@@ -32,6 +29,7 @@ Aubrey created the Petter app while inrolled in a strenuous six-month software e
 ![show](/images/Show.jpeg)
 ![create](/images/Create.jpeg)
 ![update](/images/Edit.jpeg)
+
 
 ## List of Backend Endpoints:
 
@@ -43,11 +41,13 @@ Aubrey created the Petter app while inrolled in a strenuous six-month software e
 | /pets/create      | POST   | Add a new pet    |
 | /pets/:id/delete  | DELETE | Delete a pet     |
 
+
 ## ERD (entitity relationship diagram):
 
 ![ERD](/images/unit4_erd.png)
 
 made with https://app.smartdraw.com/
+
 
 ## Future Enhancements:
 
