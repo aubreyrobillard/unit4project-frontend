@@ -3,7 +3,7 @@
 - [**LINK TO FRONTEND GITHUB**](https://github.com/aubreyrobillard/unit4project-frontend)
 - [**LINK TO BACKEND GITHUB**](https://github.com/aubreyrobillard/unit4project-backend)
 - [**LINK TO DEPLOYED WEBSITE**]()
-- [**LINK TO TRELLO**]()
+- [**LINK TO TRELLO**](https://trello.com/b/7YNyeqIB/unit-4-project)
 
 
 **List of technologies used:**
