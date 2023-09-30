@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.profilePhoto {
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  
+}
+.profilePhoto img {
+  flex: 1;
+  height: 100%;
+}

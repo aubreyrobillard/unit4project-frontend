@@ -37,7 +37,7 @@ Aubrey created the Petter app while enrolled in a strenuous six-month software e
 | ------------------| ------ | -----------------|
 | /pets             | GET    | All pets page    |
 | /pets/:id         | GET    | One pet page     |
-| /pets/:id/update    | POST   | Edit pet details |
+| /pets/:id/update  | POST   | Edit pet details |
 | /pets/create      | POST   | Add a new pet    |
 | /pets/:id/delete  | DELETE | Delete a pet     |
 
@@ -54,3 +54,7 @@ made with https://app.smartdraw.com/
 - Authorization so users can login with their own credentials and personalize their household of pets.
 - Google browser to look up vets, medications, food, etc to add to the pet profile from the internet.
 - Trusted Handlers: users will have the ability to share profiles to their pet sitters or family members in case of emergencies. Have trusted contacts that will know just how to care for your pet in times of need. 
+- Delete message that auto populates when the delete button is clicked to confirm delete
+
+## Source Material
+Birthday Cake Icon: <a target="_blank" href="https://icons8.com/icon/101410/birthday-cake">Birthday Cake</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
