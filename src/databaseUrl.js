@@ -1,3 +1,3 @@
-const URL = 'http://localhost:8000/petters/'
+const URL = 'https://petterapp-backend.onrender.com/petters/'
 
 export default URL;
