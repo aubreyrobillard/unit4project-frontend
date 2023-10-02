@@ -8,7 +8,7 @@ export const indexLoader = async () => {
 
 export const showLoader = async ({params}) => {
     const id = params.id
-    const response = await fetch(URL + `${id}`)
+    const response = await fetch(URL + id)
     const petter = await response.json()
     return petter;
 };

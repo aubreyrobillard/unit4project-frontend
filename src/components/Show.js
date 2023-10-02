@@ -2,8 +2,11 @@ import { Link, useLoaderData } from "react-router-dom";
 import { Form } from "react-router-dom";
 
 
-const Show = (props) => {
+const Show = (params) => {
+
     const post = useLoaderData()
+    const id = post.id
+
     if(post.spayed === true){
         post.spayed = "Y"
     }else {
@@ -16,7 +19,6 @@ const Show = (props) => {
         post.microchipped = "N"
     }
 
-    const cakeIcon = <img src='https://i.pinimg.com/originals/3f/2f/48/3f2f48437d350bff3effd49a9d8bc351.png' alt="birthday cake"/>
 
     return <div className="showPage">
         {/* MAIN SHOW CARD */}
@@ -25,7 +27,9 @@ const Show = (props) => {
                 <img src={post.photo} alt={post.name}/>
             </div>
             <h1>{post.name}</h1>
-            <h2>{cakeIcon} {post.birthday}</h2>
+            <div className="birthday">
+                <img src='https://i.pinimg.com/originals/3f/2f/48/3f2f48437d350bff3effd49a9d8bc351.png' alt="birthday cake"/><h2>{post.birthday}</h2>
+            </div>
             <h2>Sex: {post.sex}</h2>
             <h2>Breed: {post.breed}</h2>
             <h2>Color: {post.color}</h2>
@@ -34,15 +38,19 @@ const Show = (props) => {
             <h2>Microchipped: {post.microchipped}</h2>
         </div>
         
-        {/* EDIT BUTTON */}
-        <Link to='/update/:id'>
-            <button>Edit</button>
-        </Link>
+        <div className="buttons">
+             {/* EDIT BUTTON */}
+            <Link to={`/edit/${id}`}>
+                <button>Edit</button>
+            </Link>
+            
+            {/* DELETE BUTTON */}
+            <Form method="POST" action={`/delete/${id}`}>
+                <button>Delete</button>
+            </Form>
+        </div>
+       
         
-        {/* DELETE BUTTON */}
-        <Form method="POST" action={`/delete/${post.id}`}>
-            <button>Delete</button>
-        </Form>
         <div className="food">
             <h1>Food</h1>
             <h3>Brand: {post.foodBrand}</h3>

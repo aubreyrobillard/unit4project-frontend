@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 
 const Post = ({post}) => {
+
+    const id = post.id
+
     return <div className="petterCard">
-        <img url={post.photo} alt={post.name}/>
-        <Link to={`/post/${post.id}`}>
+        <div className="indexImg">
+            <img src={post.photo} alt={post.name}/>
+        </div>
+        
+        <Link to={`/post/${id}`}>
             <button>{post.name}</button>
         </Link>   
     </div>

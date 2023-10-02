@@ -1,6 +1,8 @@
 import { redirect } from "react-router-dom";
 import URL from "./databaseUrl";
 
+
+// Create Action
 export const createAction = async ({request}) => {
     const formData = await request.formData()
 
@@ -35,11 +37,12 @@ export const createAction = async ({request}) => {
     return redirect('/')
 }
 
-export const updateAction = async ({request, params}) => {
-    const formData = await request.formData()
 
+// Update Action
+export const updateAction = async ({request, params}) => {
     const id = params.id
 
+    const formData = await request.formData();
     const updatedPetter = {
         photo: formData.get('photo'),
         name: formData.get('name'),
@@ -60,17 +63,21 @@ export const updateAction = async ({request, params}) => {
         vetLocation: formData.get('vetLocation'),
         vetPhone: formData.get('vetPhone'),
         vetWebsite: formData.get('vetWebsite')
-    }
+    };
 
-    await fetch(URL + `${id}`, {
+    await fetch(`${URL}${id}/`, {
         method: 'put',
-        headers: { "Content-Type": "application/json"},
+        headers: { 
+            "Content-Type": "application/json"
+        },
         body: JSON.stringify(updatedPetter)
     })
 
     return redirect(`/post/${id}`)
 }
 
+
+// Delete Action
 export const deleteAction = async ({params}) => {
     const id = params.id
     await fetch(URL + `${id}`, {
