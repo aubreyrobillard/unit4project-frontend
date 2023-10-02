@@ -1,8 +1,8 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import App from './App'
-import Index from "./components/Index";
-import Show from "./components/Show";
-import Edit from "./components/Edit";
+import Index from "./pages/Index";
+import Show from "./pages/Show";
+import Edit from "./pages/Edit";
 import { showLoader, indexLoader } from "./loaders";
 import { createAction, deleteAction, updateAction } from "./actions";
 

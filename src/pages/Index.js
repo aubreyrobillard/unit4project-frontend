@@ -1,5 +1,5 @@
 import { useLoaderData, Form } from "react-router-dom";
-import Post from "./Post";
+import Post from "../components/Post";
 
 const Index = (props) => {
     const petters = useLoaderData()
@@ -34,7 +34,7 @@ const Index = (props) => {
             </Form>
         </div>
     
-        {petters.map((petter) => <Post post={petter} key={petter.id}/> )};
+        {petters.map((petters) => <Post post={petters} key={petters.id}/> )};
     </> 
     
 };
