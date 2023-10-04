@@ -9,7 +9,7 @@ const Index = (props) => {
         <div className="create">
             <h1>Add a Petter</h1>
             <Form method='post' action='/create'>
-            <input type="text" name="photo" placeholder="Photo URL"/>
+                <input type="text" name="photo" placeholder="Photo URL"/>
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="text" name="birthday" placeholder="Pet's Birthday"/>
                 <input type="text" name="sex" placeholder="Male/Female"/>

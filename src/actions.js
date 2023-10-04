@@ -30,7 +30,7 @@ export const createAction = async ({request}) => {
 
     await fetch(URL, {
         method: 'post',
-        headers: { 'Content-Type': 'applicaton/json'},
+        headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(newPetter)
     })
 
@@ -64,11 +64,12 @@ export const updateAction = async ({request, params}) => {
         vetPhone: formData.get('vetPhone'),
         vetWebsite: formData.get('vetWebsite')
     };
-    await fetch(URL + id, {
+    await fetch(URL + `${id}/`, {
         method: 'put',
         headers: { "Content-Type": "application/json"},
         body: JSON.stringify(updatedPetter)
     });
+    console.log(updatedPetter)
 
     return redirect(`/post/${id}`)
 }

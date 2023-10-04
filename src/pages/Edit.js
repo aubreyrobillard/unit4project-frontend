@@ -10,7 +10,7 @@ const Edit = (params) => {
     return (
     
         <div className="edit">
-            <Form method="POST" action={`/update/${id}`}>
+            <Form method="POST" action={`/update/${post.id}`}>
                 <h1>Edit {post.name}</h1>
                 <input type="text" name="photo" defaultValue={post.photo} placeholder="Photo URL"/>
                 <input type="text" name="name" defaultValue={post.name} placeholder="Name"/>
