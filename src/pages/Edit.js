@@ -36,7 +36,7 @@ const Edit = (params) => {
                 <input type="submit"/>
             </Form>
         
-            <button onClick={() => {return redirect(`/post/${id}`)}}>Cancel</button>
+            <button onClick={() => {return redirect(`/post/${id}/`)}}>Cancel</button>
 
         </div>
 
